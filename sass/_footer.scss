@@ -1,0 +1,36 @@
+@use './mixins';
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+	background-color: rgb(207, 186, 240);
+	border-top: 1px solid rgb(163, 196, 243);
+	box-shadow: 0 0 6px 2px rgb(163, 196, 243);
+	.footerLogoBox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.footerLogo {
+			width: 120px;
+			@include mixins.desktops {
+				width: 140px;
+			}
+			@include mixins.laptops {
+				width: 140px;
+			}
+			@include mixins.tablets {
+				width: 140px;
+			}
+		}
+		p {
+			font-size: 1.2rem;
+		}
+	}
+	.socialMedia {
+		font-size: 2.2rem;
+		.fa-square-instagram {
+			color: #dd2a7b;
+		}
+	}
+}

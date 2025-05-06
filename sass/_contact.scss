@@ -1,0 +1,52 @@
+@use './mixins';
+
+.contactSection {
+	.contactTitlle {
+		margin: 15px 0;
+		text-align: center;
+		font-family: 'Pacifico', cursive;
+		font-size: 2rem;
+		font-weight: bold;
+        @include mixins.desktops{
+            font-size: 2.8rem;
+        }
+        @include mixins.laptops{
+            font-size: 2.4rem;
+        }
+        @include mixins.tablets{
+            font-size: 2.4rem;
+        }
+	}
+	.contactText {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.contacData {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		font-size: 1.4rem;
+		.telBox {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 4px;
+		}
+		.emailBox {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 4px;
+		}
+		.fbBox {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 4px;
+			a {
+				color: black;
+				text-decoration: none;
+			}
+		}
+	}
+}

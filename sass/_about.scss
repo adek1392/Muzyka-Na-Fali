@@ -1,0 +1,63 @@
+@use './mixins';
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	scroll-margin-top: 95px;
+	.aboutMeTitle {
+		font-family: 'Pacifico', cursive;
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 15px;
+		@include mixins.desktops {
+			font-size: 2.8rem;
+		}
+		@include mixins.laptops {
+			font-size: 2.4rem;
+		}
+
+		@include mixins.tablets {
+			font-size: 2.4rem;
+		}
+	}
+	.aboutMeContent {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+		.portrait {
+			width: 100px;
+			height: 100px;
+			background-image: url('../img/PotretSm.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 50%;
+			@include mixins.desktops {
+				background-image: url('../img/Potret.jpg');
+				width: 200px;
+				height: 200px;
+			}
+			@include mixins.laptops {
+				width: 180px;
+				height: 180px;
+			}
+		}
+		.aboutMeText {
+			p {
+				margin-top: 10px;
+				@include mixins.laptops {
+					text-align: left;
+				}
+			}
+			width: 100%;
+			@include mixins.desktops {
+				width: 80%;
+			}
+			@include mixins.laptops {
+				width: 80%;
+			}
+		}
+	}
+}

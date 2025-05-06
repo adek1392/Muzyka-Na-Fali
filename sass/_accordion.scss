@@ -1,0 +1,65 @@
+@use './mixins';
+
+.accordionBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	scroll-margin-top: 95px;
+	.accordionTitle {
+		font-family: 'Pacifico', cursive;
+		font-size: 2rem;
+		font-weight: bold;
+		text-align: center;
+		margin: 15px 0;
+		@include mixins.desktops {
+			font-size: 2.8rem;
+		}
+		@include mixins.laptops {
+			font-size: 2.4rem;
+		}
+		@include mixins.tablets {
+			font-size: 2.4rem;
+		}
+	}
+	.accordionText {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.accordionItem {
+		width: 100%;
+		margin-bottom: 5px;
+		@include mixins.desktops {
+			width: 50%;
+		}
+		@include mixins.laptops {
+			width: 65%;
+		}
+		@include mixins.tablets {
+			width: 80%;
+		}
+		@include mixins.landscapePhone {
+			width: 90%;
+		}
+		.accordionHeader {
+			padding: 10px;
+			background-color: rgb(241, 192, 232);
+			cursor: pointer;
+			font-weight: bold;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+		}
+
+		.accordionContent {
+			height: 0;
+			overflow: hidden;
+			background-color: rgb(255, 207, 210);
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			transition: 0.3s;
+		}
+		.active {
+			height: auto;
+			padding: 10px;
+		}
+	}
+}

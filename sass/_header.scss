@@ -1,0 +1,58 @@
+@use './mixins';
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../img/headerImageSm.jpg') ;
+	width: 100%;
+	height: 150px;
+	margin-top: 80px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 40%;
+	z-index: -1;
+	scroll-margin-top: 80px;
+	@include mixins.desktops {
+		background-image: url('../img/headerImage.jpg');
+		height: 300px;
+	}
+	@include mixins.laptops {
+		height: 300px;
+	}
+	@include mixins.tablets {
+		height: 250px;
+	}
+	@include mixins.landscapePhone{
+		height: 200px;
+	}
+	.headerShadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: -1;
+	}
+	.headerBox {
+		padding: 0 10px;
+		.headerText {
+			line-height: 1.3;
+			text-align: center;
+			color: rgb(255, 255, 255);
+			.companyName {
+				font-size: 2.8rem;
+				font-weight: 600;
+				@include mixins.desktops {
+					font-size: 4.8rem;
+				}
+				@include mixins.laptops {
+					font-size: 3.2rem;
+				}
+			}
+			.description {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

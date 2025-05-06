@@ -1,0 +1,24 @@
+@use './reset';
+@use './navigation';
+@use './header';
+@use './mainContent';
+@use './about';
+@use './offert';
+@use './contact';
+@use './accordion';
+@use './footer';
+
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: rgb(253, 228, 207);
+	color: black;
+	line-height: 1.2;
+}
