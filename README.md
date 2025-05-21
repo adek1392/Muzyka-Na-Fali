@@ -1,21 +1,24 @@
-# Muzyka na fali 🎶
+Muzyka na fali
+Muzyka na fali to estetyczna strona typu landing page, stworzona w celu promocji zajęć muzycznych — zarówno lekcji gry na pianinie, jak i śpiewu. Głównym celem projektu jest zapewnienie łatwego dostępu do informacji oraz umożliwienie zapisów na zajęcia.
 
-**Muzyka na fali** is an aesthetic *landing page* type site, created to promote music programs - both piano lessons and singing lessons. The main goal of the project is to provide access to contact and sign up for classes.
+Technologie
+Projekt został zrealizowany przy użyciu następujących technologii:
 
-## 🔧 Technologie
+HTML
 
-The project was implemented using:
-- HTML
-- SCSS (Sass)
-- JavaScript
+SCSS (Sass)
 
-## ✨ Function
+JavaScript
 
-- Modern and responsive design
-- Information section about music classes
-- Contact details for signing up for classes
-- Clear layout encouraging to take action (CTA)
+✨ Funkcjonalności
+Nowoczesny i responsywny design
 
-## 🚀 How to start
+Sekcja informacyjna dotycząca zajęć muzycznych
 
-1.Just run github pages
+Dane kontaktowe umożliwiające zapisanie się na zajęcia
+
+Przejrzysty układ zachęcający do podjęcia działania (Call to Action)
+
+## 🌐 Demo
+
+Strona dostępna pod adresem: [Muzyka na fali – GitHub Pages](https://adek1392.github.io/Muzyka-Na-Fali/)
