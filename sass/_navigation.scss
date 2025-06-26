@@ -8,8 +8,10 @@
 	top: 0;
 	width: 100%;
 	height: 80px;
-	background-color: rgb(255, 207, 210);
-	background: linear-gradient(90deg, rgba(207, 186, 240, 1) 0%, rgba(255, 207, 210, 1) 100%);
+	background-color: rgb(255,255,255);
+	box-shadow: 2px 1px 5px rgb(255, 255, 255);
+	
+	
 	.menu {
 		@include mixins.laptops {
 			display: flex;
@@ -22,7 +24,8 @@
 			width: 30%;
 		}
 		.logo {
-			width: 150px;
+			padding: 10px;
+			width: 60px;
 		}
 	}
 	.nav {
@@ -31,7 +34,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgb(255, 207, 210);
+		background-color: rgb(255, 255, 255);
 		transform: translateX(100%);
 		transition: 0.4s;
 		z-index: 2;
@@ -71,21 +74,25 @@
 			.navItem {
 				text-decoration: none;
 				cursor: pointer;
-				font-family: 'Pacifico', cursive;
 				font-size: 2.1rem;
-				color: black;
+				font-weight: 500;
+				color:rgb(40, 32, 32);
 				padding: 30px 0;
 				transition: 0.3s;
 				@include mixins.tablets {
 					font-size: 2.5rem;
 				}
+				@include mixins.desktops {
+					padding: 7px 0;
+					font-size: 1.8rem;
+				}
 				@include mixins.laptops {
 					padding: 7px 0;
+					font-size: 1.6rem;
 				}
 			}
 			.navItem:hover {
 				font-weight: 500;
-				color: rgb(251, 248, 204);
 				transform: scale(0.8);
 			}
 		}
@@ -114,8 +121,8 @@
 			position: relative;
 			.hamburgerInner {
 				width: 100%;
-				height: 3px;
-				background-color: rgb(251, 248, 204);
+				height: 2px;
+				background-color: rgb(40, 32, 32);
 				position: absolute;
 				left: 0;
 				top: 50%;
@@ -126,8 +133,8 @@
 			.hamburgerInner::after {
 				content: '';
 				width: 100%;
-				height: 3px;
-				background-color: rgb(251, 248, 204);
+				height: 2px;
+				background-color:  rgb(40, 32, 32);
 				position: absolute;
 				left: 0;
 			}

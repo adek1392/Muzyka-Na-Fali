@@ -4,26 +4,19 @@
 	justify-content: space-around;
 	align-items: center;
 	height: 80px;
-	background-color: rgb(207, 186, 240);
-	border-top: 1px solid rgb(163, 196, 243);
-	box-shadow: 0 0 6px 2px rgb(163, 196, 243);
+	background-color: rgb(255, 255, 255);
+	box-shadow: -2px -1px 5px rgb(255, 255, 255);
+	
 	.footerLogoBox {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		.footerLogo {
-			width: 120px;
-			@include mixins.desktops {
-				width: 140px;
-			}
-			@include mixins.laptops {
-				width: 140px;
-			}
-			@include mixins.tablets {
-				width: 140px;
-			}
+			width: 50px;
+			
 		}
 		p {
+			color:rgb(40, 32, 32);;
 			font-size: 1.2rem;
 		}
 	}

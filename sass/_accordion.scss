@@ -4,9 +4,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	scroll-margin-top: 95px;
+	scroll-margin-top: 80px;
 	.accordionTitle {
-		font-family: 'Pacifico', cursive;
+		
 		font-size: 2rem;
 		font-weight: bold;
 		text-align: center;
@@ -42,7 +42,7 @@
 		}
 		.accordionHeader {
 			padding: 10px;
-			background-color: rgb(241, 192, 232);
+			background-color: rgb(241, 145, 172);
 			cursor: pointer;
 			font-weight: bold;
 			border-top-right-radius: 10px;
@@ -52,7 +52,7 @@
 		.accordionContent {
 			height: 0;
 			overflow: hidden;
-			background-color: rgb(255, 207, 210);
+			background-color: rgb(244, 187, 201);
 			border-bottom-right-radius: 10px;
 			border-bottom-left-radius: 10px;
 			transition: 0.3s;

@@ -4,7 +4,6 @@
 	.contactTitlle {
 		margin: 15px 0;
 		text-align: center;
-		font-family: 'Pacifico', cursive;
 		font-size: 2rem;
 		font-weight: bold;
         @include mixins.desktops{
@@ -44,7 +43,7 @@
 			align-items: center;
 			gap: 4px;
 			a {
-				color: black;
+				color: rgb(40, 32, 32);
 				text-decoration: none;
 			}
 		}
