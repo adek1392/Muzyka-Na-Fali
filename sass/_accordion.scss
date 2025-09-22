@@ -4,25 +4,22 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 75px 0;
 	scroll-margin-top: 80px;
 	.accordionTitle {
-		
-		font-size: 2rem;
-		font-weight: bold;
+		font-size: 3rem;
 		text-align: center;
-		margin: 15px 0;
+		margin: 0 0 30px;
 		@include mixins.desktops {
-			font-size: 2.8rem;
+		font-size: 4.2rem;
 		}
 		@include mixins.laptops {
-			font-size: 2.4rem;
+			font-size: 3.8rem;
 		}
-		@include mixins.tablets {
-			font-size: 2.4rem;
-		}
+		
 	}
 	.accordionText {
-		margin-bottom: 10px;
+		margin: 0 0 30px;
 		text-align: center;
 	}
 	.accordionItem {

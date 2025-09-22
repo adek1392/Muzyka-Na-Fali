@@ -5,6 +5,7 @@ const hamburger = document.querySelector('.hamburger'),
 	itemOfferts = document.querySelector('.offertsItem'),
 	itemContact = document.querySelector('.contactItem'),
 	itemFaq = document.querySelector('.faqItem'),
+	timetable = document.querySelector('.timetableItem'),
 	accordionHeaders = document.querySelectorAll('.accordionHeader'),
 	accordionContents = document.querySelectorAll('.accordionContent'),
 	copyrightYear = (document.querySelector('.copyrightYear').innerText = new Date().getFullYear()),
@@ -25,4 +26,5 @@ accordionHeaders.forEach(e => {
 	itemAboutMe.addEventListener('click', showMenu),
 	itemOfferts.addEventListener('click', showMenu),
 	itemContact.addEventListener('click', showMenu),
-	itemFaq.addEventListener('click', showMenu)
+	itemFaq.addEventListener('click', showMenu),
+	timetable.addEventListener('click', showMenu)

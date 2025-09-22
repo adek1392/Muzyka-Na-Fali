@@ -427,7 +427,8 @@ textarea {
   width: 100%;
   height: 80px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 2px 1px 5px rgb(255, 255, 255);
+  box-shadow: 2px 1px 5px rgb(183, 175, 175);
+  z-index: 1;
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .menuBox .menu {
@@ -503,8 +504,7 @@ textarea {
 .menuBox .nav .navItems .navItem {
   text-decoration: none;
   cursor: pointer;
-  font-size: 2.1rem;
-  font-weight: 500;
+  font-size: 2.4rem;
   color: rgb(40, 32, 32);
   padding: 30px 0;
   transition: 0.3s;
@@ -517,17 +517,17 @@ textarea {
 @media (min-width: 1201px) {
   .menuBox .nav .navItems .navItem {
     padding: 7px 0;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .menuBox .nav .navItems .navItem {
     padding: 7px 0;
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 .menuBox .nav .navItems .navItem:hover {
-  font-weight: 500;
+  color: rgb(196, 90, 149);
   transform: scale(0.8);
 }
 .menuBox .navActive {
@@ -560,7 +560,7 @@ textarea {
 }
 .menuBox .hamburger .hamburgerBox .hamburgerInner {
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: rgb(40, 32, 32);
   position: absolute;
   left: 0;
@@ -604,7 +604,7 @@ textarea {
   align-items: center;
   background-image: url("../img/headerImageSm.jpg");
   width: 100%;
-  height: 150px;
+  height: 200px;
   margin-top: 80px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -695,29 +695,39 @@ textarea {
 }
 
 .about {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-margin-top: 95px;
+  padding: 90px 20px;
+  scroll-margin-top: 80px;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+.about .whiteBlock {
+  position: absolute;
+  height: 30px;
+  width: 50%;
+  background-color: rgb(213, 189, 175);
+}
+.about .whiteBlock.whiteBlockLeft {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
 }
 .about .aboutMeTitle {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: rgb(196, 90, 149);
 }
 @media (min-width: 1201px) {
   .about .aboutMeTitle {
-    font-size: 2.8rem;
+    font-size: 4.2rem;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .about .aboutMeTitle {
-    font-size: 2.4rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .about .aboutMeTitle {
-    font-size: 2.4rem;
+    font-size: 3.8rem;
   }
 }
 .about .aboutMeContent {
@@ -725,7 +735,7 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 .about .aboutMeContent .portrait {
   width: 100px;
@@ -753,7 +763,7 @@ textarea {
   width: 100%;
 }
 .about .aboutMeContent .aboutMeText p {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .about .aboutMeContent .aboutMeText p {
@@ -772,30 +782,25 @@ textarea {
 }
 
 .offert {
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  padding: 75px 0;
   scroll-margin-top: 80px;
 }
 .offert .offertTitle {
-  margin: 15px 0 0 0;
-  font-size: 2rem;
-  font-weight: bold;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 3rem;
 }
 @media (min-width: 1201px) {
   .offert .offertTitle {
-    font-size: 2.8rem;
+    font-size: 4.2rem;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .offert .offertTitle {
-    font-size: 2.4rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .offert .offertTitle {
-    font-size: 2.4rem;
+    font-size: 3.8rem;
   }
 }
 .offert .offertDescription {
@@ -804,12 +809,16 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+.offert .offertDescription .offertText {
+  margin: 0 0 30px;
+  text-align: center;
+}
 .offert .offertDescription .offertBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
-  margin: 10px 0 15px 0;
+  margin: 0 0 30px;
   padding: 5px 10px;
   cursor: pointer;
   background-color: rgb(241, 145, 172);
@@ -837,10 +846,13 @@ textarea {
   }
 }
 .offert .offertDescription .offertBtn .offertLink {
-  color: rgb(40, 32, 32);
+  color: black;
   text-decoration: none;
 }
 .offert .offertDescription .offertBtn:hover {
+  box-shadow: 0 0 5px 2px rgb(241, 145, 172);
+  font-size: 1.4rem;
+  font-weight: bold;
   transform: scale(0.9);
 }
 .offert .offertBoxes {
@@ -870,7 +882,7 @@ textarea {
   padding: 10px;
   background-color: rgb(244, 187, 201);
   border-radius: 10px;
-  box-shadow: 0 0 5px rgb(244, 187, 201);
+  box-shadow: 0 0 5px 2px rgb(244, 187, 201);
 }
 @media (min-width: 1201px) {
   .offert .offertBoxes .offertBox {
@@ -887,7 +899,7 @@ textarea {
 @media (min-width: 769px) and (max-width: 1024px) {
   .offert .offertBoxes .offertBox {
     width: 90%;
-    padding: 15px 5px;
+    padding: 15px 10px;
     height: 300px;
   }
 }
@@ -896,15 +908,14 @@ textarea {
     width: 80%;
   }
 }
-.offert .offertBoxes .offertBox .boxContent {
-  text-align: center;
-}
 .offert .offertBoxes .offertBox .boxContent .boxTitle {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  text-align: center;
   margin-bottom: 10px;
 }
 .offert .offertBoxes .offertBox .boxContent .boxDescription {
+  text-align: center;
   font-weight: 600;
 }
 .offert .offertBoxes .offertBox .boxContent .border {
@@ -930,30 +941,42 @@ textarea {
   }
 }
 
+.contactSection {
+  position: relative;
+  padding: 90px 20px 75px;
+  scroll-margin-top: 80px;
+  overflow-x: hidden;
+  background-color: rgb(234, 222, 215);
+}
+.contactSection .whiteBlock {
+  position: absolute;
+  height: 30px;
+  width: 50%;
+  background-color: rgb(213, 189, 175);
+}
+.contactSection .whiteBlock.whiteBlockRight {
+  top: 0;
+  right: -50px;
+  transform: skew(45deg);
+}
 .contactSection .contactTitlle {
-  margin: 15px 0;
+  margin: 0 0 30px;
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
 }
 @media (min-width: 1201px) {
   .contactSection .contactTitlle {
-    font-size: 2.8rem;
+    font-size: 4.2rem;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .contactSection .contactTitlle {
-    font-size: 2.4rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .contactSection .contactTitlle {
-    font-size: 2.4rem;
+    font-size: 3.8rem;
   }
 }
 .contactSection .contactText {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .contactSection .contacData {
   display: flex;
@@ -988,31 +1011,26 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 75px 0;
   scroll-margin-top: 80px;
 }
 .accordionBox .accordionTitle {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
   text-align: center;
-  margin: 15px 0;
+  margin: 0 0 30px;
 }
 @media (min-width: 1201px) {
   .accordionBox .accordionTitle {
-    font-size: 2.8rem;
+    font-size: 4.2rem;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .accordionBox .accordionTitle {
-    font-size: 2.4rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .accordionBox .accordionTitle {
-    font-size: 2.4rem;
+    font-size: 3.8rem;
   }
 }
 .accordionBox .accordionText {
-  margin-bottom: 10px;
+  margin: 0 0 30px;
   text-align: center;
 }
 .accordionBox .accordionItem {
@@ -1066,7 +1084,7 @@ textarea {
   align-items: center;
   height: 80px;
   background-color: rgb(255, 255, 255);
-  box-shadow: -2px -1px 5px rgb(255, 255, 255);
+  box-shadow: -2px -1px 5px rgb(183, 175, 175);
 }
 .footer .footerLogoBox {
   display: flex;
@@ -1087,6 +1105,115 @@ textarea {
   color: #dd2a7b;
 }
 
+.timetable {
+  position: relative;
+  overflow-x: hidden;
+  padding: 95px 0;
+  scroll-margin-top: 80px;
+  background-color: rgb(255, 255, 255);
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .timetable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .timetable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.timetable .whiteBlock {
+  position: absolute;
+  height: 30px;
+  width: 50%;
+  background-color: rgb(213, 189, 175);
+}
+.timetable .whiteBlock.whiteBlockLeft {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+.timetable .whiteBlock.whiteBlockRight {
+  top: 0;
+  right: -50px;
+  transform: skew(45deg);
+}
+.timetable .timetableTitle {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(241, 145, 172);
+  color: rgb(196, 90, 149);
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .timetable .timetableTitle {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1201px) {
+  .timetable .timetableTitle {
+    font-size: 4.2rem;
+  }
+}
+.timetable .timetableText {
+  text-align: center;
+}
+.timetable .timetableBox {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .timetable .timetableBox {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .timetable .timetableBox {
+    width: 90%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .timetable .timetableBox {
+    width: 80%;
+  }
+}
+@media (min-width: 1201px) {
+  .timetable .timetableBox {
+    width: 100%;
+  }
+}
+.timetable .timetableBox .timetableItem {
+  width: 100%;
+  height: 400px;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .timetable .timetableBox .timetableItem {
+    border-radius: 5px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .timetable .timetableBox .timetableItem {
+    height: 600px;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .timetable .timetableBox .timetableItem {
+    height: 600px;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1201px) {
+  .timetable .timetableBox .timetableItem {
+    height: 650px;
+    border-radius: 5px;
+  }
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -1095,7 +1222,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   background-color: rgb(213, 189, 175);
   color: rgb(40, 32, 32);
   line-height: 1.2;

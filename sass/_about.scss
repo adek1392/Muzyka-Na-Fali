@@ -1,31 +1,48 @@
 @use './mixins';
 .about {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	scroll-margin-top: 95px;
+	padding: 90px 20px;
+	scroll-margin-top: 80px;
+	 overflow-x: hidden;
+	background-color: #fff;
+	.whiteBlock {
+    position: absolute;
+    height: 30px;
+    width: 50%;
+    background-color: rgb(213, 189, 175);
+    
+
+    &.whiteBlockLeft {
+        bottom: 0;
+        left: -50px;
+        transform: skew(45deg);
+    }
+}
 	.aboutMeTitle {
 		
-		font-size: 2rem;
-		font-weight: bold;
-		margin-bottom: 15px;
+		font-size: 3rem;
+		margin-bottom: 30px;
+		// color: rgb(241, 145, 172);
+		// color: rgb(255,105,180);
+		color: rgb(196, 90, 149);
 		@include mixins.desktops {
-			font-size: 2.8rem;
+			font-size: 4.2rem;
 		}
 		@include mixins.laptops {
-			font-size: 2.4rem;
+			font-size: 3.8rem;
 		}
 
-		@include mixins.tablets {
-			font-size: 2.4rem;
-		}
+		
 	}
 	.aboutMeContent {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: 10px;
+		gap: 15px;
 		.portrait {
 			width: 100px;
 			height: 100px;
@@ -46,7 +63,7 @@
 		}
 		.aboutMeText {
 			p {
-				margin-top: 10px;
+				margin-top: 15px;
 				@include mixins.laptops {
 					text-align: left;
 				}

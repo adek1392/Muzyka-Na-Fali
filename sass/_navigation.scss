@@ -9,7 +9,8 @@
 	width: 100%;
 	height: 80px;
 	background-color: rgb(255,255,255);
-	box-shadow: 2px 1px 5px rgb(255, 255, 255);
+	box-shadow: 2px 1px 5px rgb(183, 175, 175);
+	z-index: 1;
 	
 	
 	.menu {
@@ -74,8 +75,7 @@
 			.navItem {
 				text-decoration: none;
 				cursor: pointer;
-				font-size: 2.1rem;
-				font-weight: 500;
+				font-size: 2.4rem;
 				color:rgb(40, 32, 32);
 				padding: 30px 0;
 				transition: 0.3s;
@@ -84,15 +84,17 @@
 				}
 				@include mixins.desktops {
 					padding: 7px 0;
-					font-size: 1.8rem;
+					font-size: 2.2rem;
 				}
 				@include mixins.laptops {
 					padding: 7px 0;
-					font-size: 1.6rem;
+					font-size: 2rem;
 				}
 			}
 			.navItem:hover {
-				font-weight: 500;
+				// color: rgb(255,105,180);
+				color: rgb(196, 90, 149);
+				// color: rgb(241, 145, 172);;
 				transform: scale(0.8);
 			}
 		}
@@ -121,7 +123,7 @@
 			position: relative;
 			.hamburgerInner {
 				width: 100%;
-				height: 2px;
+				height: 3px;
 				background-color: rgb(40, 32, 32);
 				position: absolute;
 				left: 0;
