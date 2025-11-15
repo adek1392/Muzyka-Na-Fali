@@ -21,4 +21,4 @@ Przejrzysty układ zachęcający do podjęcia działania (Call to Action)
 
 ## 🌐 Demo
 
-Strona dostępna pod adresem: [Muzyka na fali – Vercel](https:muzyka-na-fali.vercel.app)
+Strona dostępna pod adresem: [Muzyka na fali – Vercel](https://muzyka-na-fali.vercel.app)
