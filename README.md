@@ -21,4 +21,4 @@ Przejrzysty układ zachęcający do podjęcia działania (Call to Action)
 
 ## 🌐 Demo
 
-Strona dostępna pod adresem: [Muzyka na fali – GitHub Pages](https://adek1392.github.io/Muzyka-Na-Fali/)
+Strona dostępna pod adresem: [Muzyka na fali – Vercel](https:muzyka-na-fali.vercel.app)
